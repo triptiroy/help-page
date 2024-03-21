@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';  // Update import here
+import MainPage from './MainPage';
+// import ReportGenerationPage from './ReportGenerationPage';
+import MotorInfo from './MotorInfo';
+import MoreInfo from './MoreInfo';
+import ReportPage from './ReportPage';
+import ReportGenerationPage from './ReportGeneration';
+
+
+import { HashRouter } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<MainPage/>} />
+        <Route path="/motorInfo" element={<MotorInfo/>} />
+        <Route path="/moreInfo" element={<MoreInfo/>} />
+        <Route path="/reportgeneration" element={<ReportGenerationPage/>} />
+        <Route path="/report" element={<ReportPage/>} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

@@ -1,0 +1,16 @@
+.report-page {
+  background-color: black;
+  color: white;
+  text-align: left;
+  padding: 20px;
+  min-height: 100vh;
+}
+.report-page img {
+  margin: 20px 0px;
+  transition: 0.5s;
+  
+}
+
+.report-page img:hover {
+  transform: scale(1.03);
+}

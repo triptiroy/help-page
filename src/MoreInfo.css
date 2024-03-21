@@ -1,0 +1,27 @@
+.more-info {
+  background-color: black;
+  color: white;
+  text-align: left;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.title {
+ 
+  text-align: left;
+  padding: 0px 10px;
+  
+  margin: 20px;
+}
+.more-info h2, .more-info p{
+  margin: 20px;
+}
+.more-info img {
+  margin: 20px 0px;
+  transition: 0.5s;
+  
+  
+}
+.more-info img:hover {
+  transform: scale(1.05);
+}
