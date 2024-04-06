@@ -6,6 +6,7 @@ import MotorInfo from './MotorInfo';
 import MoreInfo from './MoreInfo';
 import ReportPage from './ReportPage';
 import ReportGenerationPage from './ReportGeneration';
+import SidebarComponent from './SidebarComponent'; 
 
 
 import { HashRouter } from 'react-router-dom';
