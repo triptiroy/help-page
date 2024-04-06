@@ -5,10 +5,12 @@ import screenshot2 from './screenshots/Screenshot2.png';
 import screenshot3 from './screenshots/Screenshot3.png';
 import screenshot4 from './screenshots/Screenshot4.png';
 import screenshot5 from './screenshots/Screenshot5.png';
+import SidebarComponent from './SidebarComponent'; // Import SidebarComponent
 
 const ReportGenerationPage = () => {
   return (
     <div className="report-generation-page">
+    <SidebarComponent />
       <div className="report-title"><h1> STEPS FOR REPORT GENERATION</h1>
       </div>
       <h2>Step 1:  After testing all the motors, number of not working, working and faulty motors can be seen here.</h2>
